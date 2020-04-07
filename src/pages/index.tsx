@@ -1,9 +1,13 @@
 import { NextPage } from "next";
 import Head from "next/head";
-import Home from "../components/Home";
 import { Grommet, grommet } from "grommet";
+import API from "@aws-amplify/api";
+import PubSub from "@aws-amplify/pubsub";
+import awsconfig from "../aws-exports";
+import Home from "../components/Home";
 
-const theme = {};
+API.configure(awsconfig);
+PubSub.configure(awsconfig);
 
 const App: NextPage = () => (
   <Grommet theme={grommet}>
