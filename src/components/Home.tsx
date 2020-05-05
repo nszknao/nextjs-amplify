@@ -1,11 +1,10 @@
-import { useState, useCallback, useEffect, useReducer } from "react";
+import { useState, useCallback, useEffect } from "react";
 import update from "immutability-helper";
 import { Box, Heading, Paragraph, TextInput, Text, Button } from "grommet";
 import API, { graphqlOperation } from "@aws-amplify/api";
 import { createTodo } from "../graphql/mutations";
 import { listTodos } from "../graphql/queries";
 import { CreateTodoInput, ListTodosQuery } from "../API";
-import { onCreateTodo } from "../graphql/subscriptions";
 
 const Home = () => {
   const [value, setValue] = useState("");
