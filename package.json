@@ -14,7 +14,7 @@
     "@types/react": "^16.9.32",
     "grommet": "^2.12.0",
     "immutability-helper": "^3.0.2",
-    "next": "9.3.4",
+    "next": "11.1.3",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "styled-components": "^5.0.1",
